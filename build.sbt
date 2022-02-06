@@ -17,7 +17,8 @@ lazy val root = (project in file("."))
       "io.circe" %% "circe-parser" % "0.14.1",
       "io.circe" %% "circe-generic" % "0.14.1",
       "io.circe" %% "circe-generic-extras" % "0.14.1",
-      "org.scala-lang.modules" %% "scala-xml" % "2.0.1"
+      "org.scala-lang.modules" %% "scala-xml" % "2.0.1",
+      "joda-time" % "joda-time" % "2.10.13"
     )
   )
 
