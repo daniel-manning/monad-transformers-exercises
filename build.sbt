@@ -8,8 +8,10 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "monad-transformers-exercises",
+    scalacOptions ++= Seq("-Ymacro-annotations", "-feature"),
     libraryDependencies += scalaTest % Test,
     libraryDependencies ++= Seq(
+      "io.estatico" %% "newtype" % "0.4.4",
       "io.circe" %% "circe-core" % "0.14.1",
       "io.circe" %% "circe-literal" % "0.14.1",
       "io.circe" %% "circe-parser" % "0.14.1",
